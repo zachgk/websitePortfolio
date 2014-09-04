@@ -4,7 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 $mainColor: darkred;
-$secondColor: green;
+$secondColor: forestgreen;
 $thirdColor: lightgray;
 
 /* Space out content a bit */
@@ -91,21 +91,27 @@ body {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   border-radius: 5px;
   margin-left: 4px;
 
   .panel {
-    flex: 200px 1 1;
+    flex: 200px 0 1;
     margin-left: 20px;
     margin-right: 20px;
     color: $mainColor;
     background: $thirdColor;
+    max-height: 210px;
+
+    &.showAll {
+      flex-basis: 440px;
+    }
 
     .panel-heading {
       font-weight: bold;
       background: $secondColor;
       color: $mainColor;
+      display: block;
     }
     .panel-body {
       padding: 2px;
@@ -115,4 +121,9 @@ body {
     }
   }
 
+}
+
+.btn-contact {
+  background: $secondColor;
+  color: $thirdColor;
 }

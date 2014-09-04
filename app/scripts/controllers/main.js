@@ -43,7 +43,44 @@ angular.module('websitePortfolioApp')
         {
             title: 'Games',
             link: 'http://www.zachkimberg.com/games/list.html',
-            description: 'A ton of games I made several years ago using Processing'
+            description: 'A ton of games I made several years ago using Processing',
+            subitems: [
+                {
+                    title: 'Running Game',
+                    link: 'http://www.zachkimberg.com/games/Running_Game',
+                    description: 'Running Game'
+                },
+                {
+                    title: '4 Player Pong',
+                    link: 'http://www.zachkimberg.com/games/4_Player_Pong/index.html',
+                    description: 'A pong game for 2 to 4 players'
+                },
+                {
+                    title: 'Age of War',
+                    link: 'http://www.zachkimberg.com/games/Age_Of_War/index.html',
+                    description: 'A age of war competitive strategy game for 2 players'
+                },
+                {
+                    title: 'Color Sliders',
+                    link: 'http://www.zachkimberg.com/games/Color_Sliders/index.html',
+                    description: 'Make background color by dragging RGB sliders'
+                },
+                {
+                    title: 'Defend Castle',
+                    link: 'http://www.zachkimberg.com/games/Defend_Castle/index.html',
+                    description: 'Click the enemy dots before they reach your castle'
+                },
+                {
+                    title: 'Succeeding Counting Game',
+                    link: 'http://www.zachkimberg.com/games/Succeeding_counting/index.html',
+                    description: 'How many numbers does it take before you get 1,2,3,4, then 5 in a row'
+                },
+                {
+                    title: 'Tic Tac Toe',
+                    link: 'http://www.zachkimberg.com/games/Tic_Tac_Toe/index.html',
+                    description: 'Basic Tic Tac Toe Game'
+                },
+            ]
         },
         {
             title: 'Cite',
@@ -58,7 +95,19 @@ angular.module('websitePortfolioApp')
         {
             title: 'Software',
             link: 'http://www.zachkimberg.com/software',
-            description: 'Contains random software for download that I made'
+            description: 'Contains random software for download that I made',
+            subitems: [
+                {
+                    title: 'Text Analyzer',
+                    link: 'http://www.zachkimberg.com/software/textAnalyzer.exe',
+                    description: 'Can analyze text file, generate random file based on example, and compare two files to see how similar they are'
+                },
+                {
+                    title: 'Code Checker',
+                    link: 'http://www.zachkimberg.com/software/CodeChecker.exe',
+                    description: 'Will do a basic check of a file for semicolons and brackets matching'
+                },
+            ]
         },
         {
             title: 'Timer Land',

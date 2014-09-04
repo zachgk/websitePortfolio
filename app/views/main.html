@@ -3,13 +3,25 @@
 </div>
 
 <div class="row portfolio">
-    <div ng-repeat="item in portfolio" class="panel panel-info">
-        <div class="panel-heading">
+    <div ng-repeat="item in portfolio" class="panel panel-info" ng-class="{showAll: item.showAll}">
+        <a class="panel-heading" ng-href="{{item.link}}">
             {{item.title}} 
-        </div>
-        <div class="panel-body">
+        </a>
+        <div class="panel-body" ng-click="item.showAll = !item.showAll">
             {{item.description}}
+            <div class="contains" ng-show="item.showAll">
+                <div class="subitem" ng-repeat="sub in item.subitems">
+                    <a ng-href="sub.link">{{sub.title}} - {{sub.description}}</a>
+                </div>
+            </div>
+            <div>
+                <div ng-show="item.subitems">
+                    <span class="glyphicon glyphicon-resize-full" ng-hide="item.showAll"></span>
+                    <span class="glyphicon glyphicon-resize-small" ng-show="item.showAll"></span>
+                </div>
+            </div>
         </div>
-        <a ng-href="{{item.link}}">Go</a>
     </div>
 </div>
+
+<a href="mailto:zachary@kimberg.com" class="btn btn-contact btn-lg btn-block">Contact me at zachary@kimberg.com</a>
