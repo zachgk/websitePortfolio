@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h1>Zach Kimberg</h1>
+    <h2 ng-bind="item.title"></h2>
+</div>
+
+<p ng-bind="item.description"></p>
+
+<div ng-if="item.subitems">
+    <portfolio portfolio="item.subitems"></portfolio>
+</div>

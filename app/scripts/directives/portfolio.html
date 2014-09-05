@@ -1,0 +1,21 @@
+<div class="row portfolio">
+    <div ng-repeat="item in portfolio" class="panel panel-info" ng-class="{showAll: item.showAll}">
+        <a class="panel-heading" ng-href="{{item.link || '#/item/'+$index}}">
+            {{item.title}} 
+        </a>
+        <div class="panel-body" ng-click="item.showAll = !item.showAll">
+            {{item.description}}
+            <div class="contains" ng-show="item.showAll">
+                <div class="subitem" ng-repeat="sub in item.subitems">
+                    <a ng-href="sub.link">{{sub.title}} - {{sub.description}}</a>
+                </div>
+            </div>
+            <div>
+                <div ng-show="item.subitems">
+                    <span class="glyphicon glyphicon-resize-full" ng-hide="item.showAll"></span>
+                    <span class="glyphicon glyphicon-resize-small" ng-show="item.showAll"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
