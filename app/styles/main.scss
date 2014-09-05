@@ -3,8 +3,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-$mainColor: darkred;
-$secondColor: forestgreen;
+$mainColor: #333333;
+$secondColor: darkseagreen;
 $thirdColor: lightgray;
 
 /* Space out content a bit */
@@ -101,7 +101,6 @@ body {
     margin-right: 20px;
     color: $mainColor;
     background: $thirdColor;
-    max-height: 210px;
 
     &.showAll {
       flex-basis: 440px;
@@ -114,7 +113,10 @@ body {
       display: block;
     }
     .panel-body {
-      padding: 2px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
     a {
       color: inherit;
