@@ -9,7 +9,7 @@
 angular.module('websitePortfolioApp')
   .directive('portfolio', function () {
     return {
-      templateUrl: 'scripts/directives/portfolio.html',
+      templateUrl: 'views/portfolio.html',
       restrict: 'E',
       scope: {
         portfolio: '='
