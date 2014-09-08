@@ -11,6 +11,11 @@ angular.module('websitePortfolioApp')
   .factory('data', function () {
     var portfolio = [
         {
+            title: 'FRC Robotics',
+            link: 'https://github.com/NutsAndColts/robot-test',
+            description: 'The code to run the First Robotics Competition robot for Parkway Central Nuts & Colts for the 2014 competition during which I was co-captain of the team'
+        },
+        {
             title: 'Physics Calculators',
             link: 'http://zachkimberg.com/physicssolver/physics_calculators.zip',
             description: 'Python physics calculators that allow you to enter in variables for common equations and automatically generate solutions. Requires the use of python and sympy(http://sympy.org/en/index.html) installed '
