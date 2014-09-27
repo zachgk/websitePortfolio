@@ -2,6 +2,11 @@
     <div ng-repeat="item in portfolio" class="panel panel-info" ng-class="{showAll: item.showAll}">
         <a class="panel-heading" ng-href="{{item.link || '#/item/'+$index}}">
             {{item.title}} 
+            <span ng-switch="item.status" class="pull-right">
+                <span ng-switch-when="broken" class="glyphicon glyphicon-remove-sign" title="Broken"></span>
+                <span ng-switch-when="normal" class="glyphicon glyphicon-ok-sign" title="Normal"></span>
+                <span ng-switch-when="unfinished" class="glyphicon glyphicon-minus-sign" title="Unfinished"></span>
+            </span>
         </a>
         <div class="panel-body" ng-click="item.showAll = !item.showAll">
             {{item.description}}

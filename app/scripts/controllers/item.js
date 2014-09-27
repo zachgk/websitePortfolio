@@ -9,5 +9,5 @@
  */
 angular.module('websitePortfolioApp')
   .controller('ItemCtrl', function ($scope, $routeParams, data) {
-    $scope.item = data.getPortfolioItem($routeParams['item'])
+    $scope.item = data.getPortfolioItem($routeParams.item);
   });

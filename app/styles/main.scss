@@ -27,6 +27,7 @@ body {
   }
 }
 
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the bottom border on the jumbotron for visual effect */
@@ -64,6 +65,11 @@ body {
       padding-right: 10px;
       padding-top: 5px;
       padding-bottom: 5px;
+
+      .contains {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
     }
     a {
       color: inherit;
@@ -75,4 +81,17 @@ body {
 .btn-contact {
   background: $secondColor;
   color: $thirdColor;
+}
+
+
+.links {
+  text-align: center;
+  margin-bottom: 10px;
+
+  img {
+    border-radius: 1000px;
+    width: 80px;
+    background: invert($secondColor);
+    filter: invert(100%);
+  }
 }
